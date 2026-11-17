@@ -1,18 +1,22 @@
-# Jiruma Dogwo — Portfolio
+# Jiruma Dogwo — Software Engineering Portfolio
 
-## Preview
-Open `index.html` in a modern browser.
+Responsive single-page portfolio website.
 
-## Publish free with GitHub Pages
-1. Create/sign in to a GitHub account.
-2. Create a new public repository named `jiruma-dogwo-portfolio`.
-3. Upload `index.html` to the repository root and commit.
-4. Open repository Settings → Pages.
-5. Under Build and deployment, choose Deploy from a branch, select `main` and `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish. The public URL will be shown in Settings → Pages.
+## Website
+https://jirumad.github.io/jiruma-dogwo-portfolio/
 
-## Before applying
-- Confirm all CV dates, degree status and project descriptions.
-- Add GitHub links or screenshots only for projects you can demonstrate.
-- The portfolio intentionally does not claim unverified full-stack frameworks, client projects, live deployments or commercial outcomes.
-- Update the contact email if needed.
+## Technologies in this website
+- HTML
+- CSS
+- JavaScript
+
+## Profile
+Python, SQL, pandas, NumPy, Excel, JSON, data validation and scientific data workflows.
+
+## Important
+Project descriptions reflect the project areas in the supplied CV. They are not presented as client engagements or deployed commercial products. Update the portfolio with repository links and live demonstrations as projects are completed.
+
+Technologies listed as areas of interest should not be interpreted as established professional experience.
+
+## Contact
+jessedogwo@gmail.com
