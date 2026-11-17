@@ -1,85 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Portfolio of Jiruma Dogwo — Python, SQL, data analysis, AI data quality and scientific data workflows.">
-<title>Jiruma Dogwo | Python & Data Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jiruma Dogwo — Software Engineer focused on Python, SQL, data-driven applications and practical digital solutions.">
+<meta name="theme-color" content="#0b1020">
+<title>Jiruma Dogwo | Software Engineer</title>
+
 <style>
-:root{--bg:#080d18;--panel:#101a2b;--panel2:#142238;--text:#eef4ff;--muted:#a8b7ce;--line:#263650;--accent:#79e0c3;--blue:#8ab8ff;--max:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#152c43 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
-a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover,.textlink:hover{color:var(--accent)}
-.hero{padding:92px 0 74px;display:grid;grid-template-columns:1.35fr .65fr;gap:54px;align-items:center}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--accent)}.lead{font-size:19px;color:var(--muted);max-width:690px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 18px;border-radius:9px;font-weight:750;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px}.primary{background:var(--accent);color:#07131a;border-color:var(--accent)}.secondary:hover{border-color:var(--accent)}.hero-card{background:linear-gradient(145deg,#14263c,#0c1524);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 24px 70px #0005}.monogram{width:68px;height:68px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--blue));color:#08121e;display:grid;place-items:center;font-size:25px;font-weight:900}.hero-card h3{margin:20px 0 4px}.hero-card p{color:var(--muted);margin:0}.statrow{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}.pill,.tag{font-size:12px;border:1px solid var(--line);padding:6px 10px;border-radius:99px;color:#c8d6e9;background:#ffffff05}
-section{padding:66px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.sectionhead h2{font-size:32px;letter-spacing:-.035em;margin:7px 0 0}.sectionhead p{color:var(--muted);max-width:520px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(160deg,var(--panel),#0d1523);border:1px solid var(--line);border-radius:16px;padding:23px}.card h3{margin:8px 0 7px;font-size:19px}.card p{color:var(--muted);margin:0 0 14px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{border-radius:7px;padding:4px 8px;color:#b9d7d1}.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:800}
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:18px;border:1px solid var(--line);border-radius:13px;background:#ffffff04}.skill strong{display:block;margin-bottom:5px}.skill span{font-size:14px;color:var(--muted)}
-.timeline{display:grid;gap:14px}.job{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}.job time{color:var(--accent);font-size:13px;font-weight:750}.job p,.job li{color:var(--muted)}.job h3{margin:0}.job ul{margin:8px 0 0;padding-left:19px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}.about p{color:var(--muted)}.note{border-left:3px solid var(--accent);padding:15px 18px;background:#79e0c30d;color:#d8e7f4;border-radius:0 10px 10px 0}
-footer{padding:38px 0 50px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:13px;color:var(--muted)}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 50px;gap:28px}.navlinks{gap:12px;font-size:12px}.grid,.skills,.about{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:4px}.sectionhead{display:block}.sectionhead p{margin-top:12px}}
-@media(max-width:430px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.wrap{width:min(100% - 28px,var(--max))}}
+:root {
+  --bg:#0b1020;
+  --panel:#111a2e;
+  --text:#eef3ff;
+  --muted:#a8b4cb;
+  --line:rgba(173,190,225,.16);
+  --accent:#7c9cff;
+  --accent2:#64e0c0;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ background:radial-gradient(ellipse at 80% 0%,rgba(67,101,190,.17),transparent 35%),var(--bg);
+ color:var(--text);
+ font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent2)}
+.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+.nav{
+ position:sticky;top:0;z-index:10;
+ background:rgba(11,16,32,.88);
+ backdrop-filter:blur(18px);
+ border-bottom:1px solid var(--line);
+}
+.navin{
+ height:74px;display:flex;align-items:center;
+ justify-content:space-between;gap:20px;
+}
+.brand{font-weight:900;font-size:1.1rem;letter-spacing:-.04em}
+.brand span{color:var(--accent2)}
+.links{display:flex;gap:24px;color:var(--muted);font-size:.9rem}
+.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:9px;border-radius:9px}
+.hero{
+ padding:100px 0 85px;
+ display:grid;grid-template-columns:1.35fr .65fr;
+ gap:55px;align-items:center;
+}
+.eyebrow{color:var(--accent2);font-weight:800;letter-spacing:.13em;font-size:.78rem}
+h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.99;letter-spacing:-.075em;margin:22px 0}
+h1 span{
+ background:linear-gradient(100deg,#fff,#9db4ff,#6fe3c4);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lead{font-size:1.15rem;color:#c0cbe0;max-width:690px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;padding:12px 19px;border-radius:12px;font-weight:750;border:1px solid var(--line)}
+.primary{background:linear-gradient(110deg,#8aa5ff,#65dec2);color:#07101d;border:0}
+.secondary:hover{border-color:var(--accent)}
+.hero-card,.card{
+ background:linear-gradient(145deg,rgba(21,31,53,.95),rgba(15,23,41,.92));
+ border:1px solid var(--line);border-radius:22px;padding:26px;
+}
+.orb{
+ height:165px;border-radius:20px;
+ background:radial-gradient(circle at 55% 40%,rgba(100,224,192,.5),transparent 23%),radial-gradient(circle at 45% 55%,rgba(124,156,255,.6),transparent 45%),#101a31;
+ display:grid;place-items:center;margin-bottom:20px;
+}
+.orb b{font-size:3.5rem}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:rgba(7,13,27,.45);padding:13px;border-radius:12px;border:1px solid var(--line)}
+.stat strong{display:block}
+.stat small{color:var(--muted)}
+section{padding:75px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}
+.kicker{color:var(--accent2);font-size:.75rem;font-weight:800;letter-spacing:.15em}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.055em;margin:9px 0}
+.section-intro{color:var(--muted);max-width:570px;margin:0}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.card p{color:#c0cbe0}
+.focus{padding:13px 0;border-bottom:1px solid var(--line)}
+.focus:last-child{border:0}
+.focus strong{display:block}
+.focus small{color:var(--muted)}
+.skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.skill h3{margin-top:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{padding:7px 10px;border-radius:9px;background:rgba(124,156,255,.1);border:1px solid rgba(124,156,255,.16);font-size:.82rem;color:#dce5ff}
+.muted-tag{background:rgba(255,255,255,.035);border-color:var(--line);color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.project h3{font-size:1.35rem;margin:17px 0 8px}
+.project p{color:var(--muted)}
+.project-number{color:var(--accent2);font-size:.8rem;font-weight:800}
+.note{font-size:.82rem;color:var(--muted);margin-top:20px}
+.timeline{display:grid;gap:20px}
+.role{display:grid;grid-template-columns:180px 1fr;gap:22px}
+.when{color:var(--accent2);font-size:.88rem;font-weight:750}
+.role h3{margin:0 0 5px}
+.role p{margin:0;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.contact{
+ display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;
+ background:linear-gradient(110deg,rgba(124,156,255,.15),rgba(100,224,192,.08));
+ border:1px solid var(--line);border-radius:25px;padding:32px;
+}
+.contact p{color:var(--muted)}
+footer{padding:30px 0;color:var(--muted);font-size:.85rem}
+@media(max-width:850px){
+ .hero{grid-template-columns:1fr}
+ .about-grid{grid-template-columns:1fr}
+ .skillgrid,.services{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+ .links{display:none;position:absolute;top:74px;left:0;right:0;background:#0d1426;padding:20px;flex-direction:column}
+ .links.open{display:flex}
+ .menu{display:block}
+ .hero{padding:65px 0}
+ .section-head{display:block}
+ .section-intro{margin-top:12px}
+ .skillgrid,.projects,.services{grid-template-columns:1fr}
+ .role{grid-template-columns:1fr;gap:5px}
+ .contact{grid-template-columns:1fr}
+ .wrap{width:calc(100% - 30px)}
+}
 </style>
 </head>
+
 <body>
-<div class="wrap">
-<nav><a class="brand" href="#">JD<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
-<main>
-<header class="hero">
-<div>
-<div class="eyebrow">Python · SQL · Data & AI Quality</div>
-<h1>Jiruma <em>Dogwo</em></h1>
-<p class="lead">I work with data, code and structured problem-solving — bringing a scientific mindset to Python-based analysis, SQL data exploration, and quality-focused digital workflows.</p>
-<div class="actions"><a class="btn primary" href="#work">Explore selected work <span>↗</span></a><a class="btn secondary" href="mailto:jessedogwo@gmail.com">Contact me</a></div>
-<div class="statrow"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">pandas & NumPy</span><span class="pill">Scientific data</span></div>
+
+<header class="nav">
+<div class="wrap navin">
+<a class="brand" href="#home">JIRUMA<span>.</span></a>
+<nav class="links" id="links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+<button class="menu" id="menu">Menu</button>
 </div>
-<aside class="hero-card"><div class="monogram">JD</div><h3>Analytical thinking. Practical data work.</h3><p>Biomedical engineering education, laboratory operations experience, and an interest in reliable data and AI systems.</p><div class="statrow"><span class="pill">Nigeria · Remote-ready</span><span class="pill">English</span></div></aside>
 </header>
 
-<section id="about">
-<div class="sectionhead"><div><div class="eyebrow">Profile</div><h2>About me</h2></div><p>A science-informed approach to technical work, with attention to accuracy, traceability and clear documentation.</p></div>
-<div class="about"><div><p>I am a biochemistry-trained professional with experience in laboratory specimen reception, biological sample handling, data entry and record management. My technical interests include Python programming, SQL, scientific data analysis, AI training and data quality assurance.</p><p>Working in a quality-focused laboratory environment has strengthened my attention to detail, ability to identify inconsistencies and commitment to following defined procedures. I bring these habits to data processing and technical problem-solving.</p></div><div class="note">I am especially interested in opportunities involving data analysis, AI response evaluation, data annotation, scientific datasets and Python/SQL workflows.</div></div>
-</section>
+<main>
 
-<section id="work">
-<div class="sectionhead"><div><div class="eyebrow">Selected work</div><h2>Projects & practical experience</h2></div><p>Project descriptions below are based on the experience outlined in my CV. They are not presented as client engagements or live products.</p></div>
-<div class="grid">
-<article class="card"><div class="label">Python · Healthcare data</div><h3>Healthcare Dataset Analysis</h3><p>Cleaned and validated structured healthcare data, checked for inconsistencies and incorrectly formatted values, organized records for exploratory analysis, and documented findings in a structured format.</p><div class="tags"><span class="tag">Python</span><span class="tag">JSON</span><span class="tag">Data validation</span></div></article>
-<article class="card"><div class="label">Python · Biological data</div><h3>Biological Data Analysis</h3><p>Explored biological datasets to identify patterns and potential inconsistencies. Applied data-cleaning and basic analytical techniques, then organized results for reporting.</p><div class="tags"><span class="tag">Python</span><span class="tag">Data cleaning</span><span class="tag">Exploratory analysis</span></div></article>
-<article class="card"><div class="label">SQL · Structured data</div><h3>SQL Data Exploration</h3><p>Practiced retrieving and examining structured data using SQL queries, with a focus on understanding records and supporting systematic data review.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Querying</span><span class="tag">Structured data</span></div></article>
-<article class="card"><div class="label">AI · Data quality</div><h3>Data Annotation & Evaluation</h3><p>Reviewed structured information for accuracy, consistency and completeness. Interested in applying annotation guidelines, quality checks and systematic evaluation to AI training workflows.</p><div class="tags"><span class="tag">AI data quality</span><span class="tag">Annotation</span><span class="tag">Quality assurance</span></div></article>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow">SOFTWARE ENGINEERING & DATA SOLUTIONS</div>
+<h1>Building useful<br><span>digital solutions.</span></h1>
+<p class="lead">
+I'm Jiruma Dogwo, a technology-focused professional working with Python,
+SQL and structured data. I bring analytical problem-solving, quality-minded
+workflows and a practical approach to software development.
+</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore my work</a>
+<a class="btn secondary" href="mailto:jessedogwo@gmail.com">Contact me</a>
+</div>
+</div>
+<aside class="hero-card">
+<div class="orb"><b>JD</b></div>
+<div class="statgrid">
+<div class="stat"><strong>Python</strong><small>Programming & analysis</small></div>
+<div class="stat"><strong>SQL</strong><small>Structured data</small></div>
+<div class="stat"><strong>Quality</strong><small>Validation mindset</small></div>
+<div class="stat"><strong>Global</strong><small>Remote opportunities</small></div>
+</div>
+</aside>
+</div>
+
+<section id="about">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">01 / ABOUT</div><h2>Engineering mindset.<br>Real-world perspective.</h2></div>
+<p class="section-intro">A cross-disciplinary background shaped by scientific work, data integrity and continuous technical development.</p>
+</div>
+<div class="about-grid">
+<article class="card">
+<p>I am Jiruma Dogwo, a software- and data-focused professional with an academic background in biomedical engineering and biochemistry. My technical foundation includes Python, SQL, pandas, NumPy, Excel and JSON, with an interest in building dependable applications and data-driven solutions.</p>
+<p>My experience in laboratory operations has strengthened my attention to detail, documentation, confidentiality, process discipline and ability to identify inconsistencies. I apply the same structured mindset to technical problem-solving: understand the requirement, work carefully with information, validate results and communicate clearly.</p>
+<p>I am interested in opportunities across software development, Python programming, backend and API development, data analysis, automation and AI-related data workflows. I value continuous learning, collaboration and building solutions that are useful, maintainable and grounded in real needs.</p>
+</article>
+<article class="card">
+<div class="focus"><strong>Analytical problem-solving</strong><small>Break down complex tasks into clear, testable steps.</small></div>
+<div class="focus"><strong>Data quality & integrity</strong><small>Careful handling, validation and documentation.</small></div>
+<div class="focus"><strong>Practical development</strong><small>Use programming and structured data to solve operational problems.</small></div>
+<div class="focus"><strong>Continuous growth</strong><small>Expand engineering capability through hands-on projects.</small></div>
+</article>
+</div>
 </div>
 </section>
 
 <section id="skills">
-<div class="sectionhead"><div><div class="eyebrow">Technical toolkit</div><h2>Skills & tools</h2></div><p>Focused on the technologies and capabilities identified in my CV.</p></div>
-<div class="skills">
-<div class="skill"><strong>Python</strong><span>Data processing, cleaning and basic analysis</span></div>
-<div class="skill"><strong>SQL</strong><span>Querying and exploring structured datasets</span></div>
-<div class="skill"><strong>pandas & NumPy</strong><span>Tabular data handling and numerical operations</span></div>
-<div class="skill"><strong>JSON & Excel</strong><span>Structured information, validation and records</span></div>
-<div class="skill"><strong>AI data quality</strong><span>Annotation, consistency checks and evaluation interests</span></div>
-<div class="skill"><strong>Scientific data</strong><span>Biological data, laboratory records and documentation</span></div>
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">02 / TECHNICAL TOOLKIT</div><h2>Tools I work with.</h2></div>
+<p class="section-intro">A transparent snapshot of the technologies and working areas represented in my current profile.</p>
+</div>
+<div class="skillgrid">
+<article class="card skill"><h3>Programming & analysis</h3><div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">NumPy</span></div></article>
+<article class="card skill"><h3>Data & databases</h3><div class="tags"><span class="tag">SQL</span><span class="tag">JSON</span><span class="tag">Excel</span></div></article>
+<article class="card skill"><h3>Applied data work</h3><div class="tags"><span class="tag">Data cleaning</span><span class="tag">Validation</span><span class="tag">Exploratory analysis</span></div></article>
+<article class="card skill"><h3>Professional strengths</h3><div class="tags"><span class="tag">Documentation</span><span class="tag">Quality control</span><span class="tag">Technical writing</span></div></article>
+<article class="card skill"><h3>Areas of interest</h3><div class="tags"><span class="tag muted-tag">Backend engineering</span><span class="tag muted-tag">REST APIs</span><span class="tag muted-tag">Automation</span></div></article>
+<article class="card skill"><h3>Growing focus</h3><div class="tags"><span class="tag muted-tag">Full-stack development</span><span class="tag muted-tag">Cloud deployment</span><span class="tag muted-tag">AI applications</span></div></article>
+</div>
+<p class="note">Skills and interests are intentionally distinguished. Technologies shown as areas of interest are not presented as established professional experience.</p>
+</div>
+</section>
+
+<section id="projects">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">03 / SELECTED WORK</div><h2>Projects & technical practice.</h2></div>
+<p class="section-intro">Project areas based on my current portfolio and technical practice. Repository links and demonstrations can be added as each project is published.</p>
+</div>
+<div class="projects">
+<article class="card project"><span class="project-number">PROJECT 01</span><h3>Healthcare Dataset Analysis</h3><p>Structured healthcare data analysis focused on cleaning, validation and exploratory review. Highlights careful handling of records and identifying inconsistencies in datasets.</p><div class="tags"><span class="tag">Python</span><span class="tag">JSON</span><span class="tag">Validation</span></div></article>
+<article class="card project"><span class="project-number">PROJECT 02</span><h3>Biological Data Analysis</h3><p>Applied programming practice using biological data, with an emphasis on organising information, analysing values and communicating findings clearly.</p><div class="tags"><span class="tag">Python</span><span class="tag">Scientific data</span></div></article>
+<article class="card project"><span class="project-number">PROJECT 03</span><h3>SQL Data Analysis</h3><p>Querying and exploring structured datasets to retrieve, filter and organise information for reporting and analysis.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Structured data</span></div></article>
+<article class="card project"><span class="project-number">PROJECT 04</span><h3>Data Annotation & Evaluation</h3><p>Evaluation of structured information for accuracy, completeness and consistency—work that supports reliable datasets and AI data workflows.</p><div class="tags"><span class="tag">Data evaluation</span><span class="tag">Quality checks</span></div></article>
+</div>
+<p class="note">These summaries reflect project areas described in my CV. They are not represented as client engagements or deployed commercial products.</p>
 </div>
 </section>
 
 <section id="experience">
-<div class="sectionhead"><div><div class="eyebrow">Background</div><h2>Experience & education</h2></div></div>
-<div class="timeline">
-<div class="job"><time>2021 — Present</time><div><h3>Specimen Reception Officer · SYNLAB Nigeria</h3><ul><li>Receive, identify and process biological specimens in line with laboratory procedures.</li><li>Manage approximately 50 or more samples daily depending on workload.</li><li>Enter and verify specimen information, identify record discrepancies and support data integrity.</li></ul></div></div>
-<div class="job"><time>2018 — 2021</time><div><h3>Dairy Farm Assistant</h3><p>Supported daily farm operations, livestock monitoring and accurate biological and operational recordkeeping.</p></div></div>
-<div class="job"><time>2017 — 2018</time><div><h3>Veterinary Assistant</h3><p>Supported routine veterinary procedures under supervision, animal observation and clinical recordkeeping.</p></div></div>
-<div class="job"><time>2024 — 2026</time><div><h3>M.Sc. · Biomedical Engineering</h3><p>University of Benin (UNIBEN)</p></div></div>
-<div class="job"><time>2022</time><div><h3>PGD · Agricultural Extension and Management</h3><p>National Open University of Nigeria (NOUN)</p></div></div>
-<div class="job"><time>2016 / 2014</time><div><h3>HND Biochemistry / ND Science Laboratory Technology</h3><p>Kogi State Polytechnic, Lokoja</p></div></div>
+<div class="wrap">
+<div class="section-head"><div><div class="kicker">04 / EXPERIENCE</div><h2>Professional foundation.</h2></div></div>
+<div class="card timeline">
+<div class="role"><div class="when">2021 — Present</div><div><h3>Specimen Reception Officer · SYNLAB Nigeria</h3><p>Receive, identify and process biological specimens; enter and verify records; identify discrepancies; and maintain data integrity while following quality, safety and confidentiality procedures. Handle approximately 50+ samples per day depending on workload.</p></div></div>
+<div class="role"><div class="when">2018 — 2021</div><div><h3>Dairy Farm Assistant</h3><p>Supported routine farm operations and practical workflows requiring consistency, observation and careful execution.</p></div></div>
+<div class="role"><div class="when">2017 — 2018</div><div><h3>Veterinary Assistant</h3><p>Assisted with veterinary support activities and animal care procedures.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="wrap">
+<div class="section-head"><div><div class="kicker">05 / EDUCATION</div><h2>Education & credentials.</h2></div></div>
+<div class="card timeline">
+<div class="role"><div class="when">2024 — 2026</div><div><h3>M.Sc. Biomedical Engineering</h3><p>University of Benin</p></div></div>
+<div class="role"><div class="when">2022</div><div><h3>PGD Agricultural Extension and Management</h3><p>National Open University of Nigeria</p></div></div>
+<div class="role"><div class="when">2016</div><div><h3>HND Biochemistry</h3><p>Kogi State Polytechnic</p></div></div>
+<div class="role"><div class="when">2014</div><div><h3>ND Science Laboratory Technology</h3><p>Kogi State Polytechnic</p></div></div>
+<div class="role"><div class="when">2026</div><div><h3>Professional Certificate of Competency in Mechanical Engineering and Advanced CAD/CAE Engineering</h3><p>Professional certification</p></div></div>
+<div class="role"><div class="when">2023</div><div><h3>Health, Safety & Environment (HSE) Levels 1–3</h3><p>Professional certification</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="section-head"><div><div class="kicker">06 / COLLABORATION</div><h2>How I can contribute.</h2></div></div>
+<div class="services">
+<article class="card"><h3>Python & data tasks</h3><p>Data processing, analysis scripts, cleaning and validation workflows.</p></article>
+<article class="card"><h3>Structured data</h3><p>SQL querying, data organisation and reporting support.</p></article>
+<article class="card"><h3>AI data evaluation</h3><p>Structured data review, annotation support and quality-focused evaluation.</p></article>
+</div>
 </div>
 </section>
 
 <section id="contact">
-<div class="sectionhead"><div><div class="eyebrow">Get in touch</div><h2>Let's work together</h2></div><p>Open to opportunities in Python, SQL, data analysis, AI data evaluation and scientific data workflows.</p></div>
-<div class="card"><h3>Jiruma Dogwo</h3><p>Email is the best way to reach me about suitable projects and collaborations.</p><div class="actions"><a class="btn primary" href="mailto:jessedogwo@gmail.com">jessedogwo@gmail.com ↗</a></div></div>
-</section>
-</main>
-<footer><span>© <span id="year"></span> Jiruma Dogwo</span><span class="small">Built to present verified skills and experience.</span></footer>
+<div class="wrap">
+<div class="contact">
+<div><div class="kicker">07 / GET IN TOUCH</div><h2>Let's solve something useful.</h2><p>Open to remote opportunities, collaborations and project conversations.</p></div>
+<a class="btn primary" href="mailto:jessedogwo@gmail.com">Email Jiruma ↗</a>
 </div>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+</div>
+</section>
+
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Jiruma Dogwo. All rights reserved.</div></footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("menu").addEventListener("click", () => {
+ document.getElementById("links").classList.toggle("open");
+});
+document.querySelectorAll("#links a").forEach(a => {
+ a.addEventListener("click", () => document.getElementById("links").classList.remove("open"));
+});
+</script>
+
+</body>
+</html>
